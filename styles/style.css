@@ -145,8 +145,41 @@ body {
 }
 
 /* HEADER */
+header {
+  width: 100%;
+  position: absolute;
+}
+
+header nav {
+  width: 100%;
+  position: sticky;
+}
+
+header nav * {
+  color: #060606;
+}
+
+header nav .brand {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+header nav .brand a {
+  position: relative;
+}
+
+header nav .brand i {
+  font-size: 20px;
+  position: absolute;
+  top: -5px;
+  left: 55px;
+}
 
 /* BANNER */
+.banner {
+  height: 100vh;
+  position: relative;
+}
 
 /* PRODUCTS */
 
