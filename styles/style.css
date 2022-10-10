@@ -86,6 +86,7 @@ textarea {
   font-size: 100%;
   font: inherit;
   text-decoration: none;
+  background-color: rgba(0, 0, 0, 0);
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -148,11 +149,13 @@ body {
 header {
   width: 100%;
   position: absolute;
+  z-index: 2;
 }
 
 header nav {
   width: 100%;
   position: sticky;
+  padding: 20px 0;
 }
 
 header nav * {
@@ -165,20 +168,96 @@ header nav .brand {
 }
 
 header nav .brand a {
+  color: white;
   position: relative;
 }
 
 header nav .brand i {
   font-size: 20px;
+  color: white;
   position: absolute;
   top: -5px;
   left: 55px;
+}
+
+header nav .brand:hover * {
+  text-decoration: none;
+  color: #fb811e;
+}
+
+header nav .menu {
+  gap: 15px;
+}
+
+header nav .menu i {
+  font-size: 20px;
+}
+
+header nav .menu .fa-magnifying-glass {
+  background-color: white;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  z-index: 4;
+}
+
+header nav .menu input {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: white;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  right: 0;
+  z-index: 3;
+  transition: all 0.5s;
+}
+
+header nav .menu button.search:focus-within input {
+  outline: none;
+  width: 200px;
+  padding-left: 35px;
+}
+
+header nav .menu button.theme_changer:hover i {
+  color: #fb811e;
+}
+
+header nav .menu button.hamburger_menu {
+  position: relative;
+}
+
+header nav .menu .hamburger_menu_toggle {
+  background-color: white;
+  border-radius: 5px;
+  width: 250px;
+  height: 0;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  transition: all 0.5s;
+}
+
+header nav .menu .hamburger_menu_toggle li {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #060606;
+  padding: 15px 0;
+}
+
+header nav .menu .hamburger_menu_toggle :is(a.active, a:hover) {
+  text-decoration: none;
+  color: #fb811e;
 }
 
 /* BANNER */
 .banner {
   height: 100vh;
   position: relative;
+  z-index: 1;
+  background-image: url(/imgs/g1.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 /* PRODUCTS */
