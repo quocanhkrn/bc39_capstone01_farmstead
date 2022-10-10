@@ -145,6 +145,45 @@ body {
   font-family: 'Volkhov', serif;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
+h2.subtitle {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fb811e;
+}
+
+h1.title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #060606;
+  margin-bottom: 20px;
+}
+
+p.description {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 17px;
+  color: #707070;
+  margin-bottom: 40px;
+}
+
+button.primary_button {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  background-color: #fb811e;
+  border-radius: 50px;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+
+button.primary_button:hover {
+  background-color: #009f4d;
+}
+
 /* HEADER */
 header {
   width: 100%;
@@ -167,14 +206,16 @@ header nav .brand {
   font-weight: 700;
 }
 
-header nav .brand a {
+header nav .brand * {
   color: white;
+}
+
+header nav .brand a {
   position: relative;
 }
 
 header nav .brand i {
   font-size: 20px;
-  color: white;
   position: absolute;
   top: -5px;
   left: 55px;
@@ -250,6 +291,16 @@ header nav .menu .hamburger_menu_toggle :is(a.active, a:hover) {
   color: #fb811e;
 }
 
+@media only screen and (min-width: 768px) {
+  header nav .brand * {
+    color: #fb811e;
+  }
+
+  header nav .brand:hover * {
+    color: #060606;
+  }
+}
+
 /* BANNER */
 .banner {
   height: 100vh;
@@ -261,6 +312,45 @@ header nav .menu .hamburger_menu_toggle :is(a.active, a:hover) {
 }
 
 /* PRODUCTS */
+.products_left {
+  padding: 0 25px;
+}
+
+.products_item {
+  padding: 10px;
+}
+
+.products_item .content {
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px 30px;
+}
+
+.products_item:hover .content {
+  box-shadow: 0 25px 98px 0 rgb(0 0 0 / 10%);
+}
+
+.products_item .content .icon {
+  width: 65px;
+  height: 65px;
+}
+
+.products_item .content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.products_item .content a {
+  font-size: 20px;
+  font-weight: 700;
+  color: #060606;
+}
+
+.products_item .content a:hover {
+  color: #009f4d;
+}
 
 /* SERVICES */
 
