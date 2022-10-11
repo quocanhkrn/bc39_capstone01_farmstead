@@ -134,6 +134,7 @@ table {
 *:before,
 *:after {
   box-sizing: inherit;
+  transition: all 0.5s
 }
 
 /* MAIN CSS */
