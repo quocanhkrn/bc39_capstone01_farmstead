@@ -134,6 +134,11 @@ table {
 *:before,
 *:after {
   box-sizing: inherit;
+  transition: all 0.5s
+}
+p{
+  margin:0;
+  padding:0;
 }
 
 /* MAIN CSS */
@@ -142,6 +147,45 @@ table {
 body {
   font-family: 'Source Sans Pro', sans-serif;
   font-family: 'Volkhov', serif;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h2.subtitle {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fb811e;
+}
+
+h1.title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #060606;
+  margin-bottom: 20px;
+}
+
+p.description {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 17px;
+  color: #707070;
+  margin-bottom: 40px;
+}
+
+button.primary_button {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  background-color: #fb811e;
+  border-radius: 50px;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+
+button.primary_button:hover {
+  background-color: #009f4d;
 }
 
 /* HEADER */
@@ -155,7 +199,42 @@ body {
 /* QUALITY */
 
 /* FEATURES */
-
+.feature-col a{
+  text-decoration: none;
+  color: #060606;
+  transition: all .5s;
+}
+.feature-unit{
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 2rem 1rem;
+  background: var(bg light);
+  transition: 0.3 ease-in;
+}
+.feature-unit:hover{
+  border: 1px solid #eee;
+  transition: ease-in .3s;
+  /* box-shadow: -1px 2px 12px -9px; */
+  background: #fff;
+}
+.feature-col{
+  margin-top: 30px;
+}
+.feature-text h4{
+  font-size: 22px;
+  line-height: 25px;
+  font-weight: 600;
+}
+.feature-text h4:hover{
+  transition: 0.3s ease-in-out;
+  color: #009f4d;
+}
+.feature-text p{
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 300;
+}
 /* GALLERY */
 
 /* FEEDBACK */
