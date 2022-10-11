@@ -442,6 +442,52 @@ header nav .menu .hamburger_menu_toggle :is(a.active, a:hover) {
 }
 
 /* QUALITY */
+.quality_text .showcase_item i {
+  font-size: 30px;
+  color: #fb811e;
+}
+
+.quality_text .showcase_item h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #060606;
+}
+
+.quality_text .showcase_item p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 17px;
+  color: #707070;
+}
+
+.quality_img {
+  position: relative;
+  width: fit-content;
+}
+
+.quality_img img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.quality_img .caption {
+  background-color: #fb811e;
+  border-bottom-right-radius: 70px;
+  box-shadow: 30px 30px 30px rgb(0 0 0 / 20%);
+  position: absolute;
+  left: -30px;
+  bottom: 50px;
+}
+
+.quality_img .caption h1 {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.quality_img .caption p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
 
 /* FEATURES */
 
