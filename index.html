@@ -10,7 +10,6 @@
       integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
@@ -53,7 +52,50 @@
         </div>
       </nav>
     </header>
-    <section class="banner"></section>
+
+    <section class="banner row p-0 m-0">
+      <div class="banner_slideshow col-12 col-md-7 ml-auto p-0 overflow-hidden h-100">
+        <div id="carousel" class="carousel slide h-100">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner h-100">
+            <div class="carousel-item h-100 active">
+              <img src="imgs/b1.jpg" class="d-block w-100 h-100" alt="" />
+              <div class="carousel-caption text-right d-none d-md-block">
+                <h1>01/03</h1>
+                <p>Agriculture</p>
+              </div>
+            </div>
+            <div class="carousel-item h-100">
+              <img src="imgs/b8.jpg" class="d-block w-100 h-100" alt="" />
+              <div class="carousel-caption text-right d-none d-md-block">
+                <h1>02/03</h1>
+                <p>Farm Field</p>
+              </div>
+            </div>
+            <div class="carousel-item h-100">
+              <img src="imgs/b4.jpg" class="d-block w-100 h-100" alt="" />
+              <div class="carousel-caption text-right d-none d-md-block">
+                <h1>03/03</h1>
+                <p>Organic Farm</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner_text p-5 mx-3">
+        <div class="title">
+          <h1 class="title">Welcome to Farmstead where Natural Food is born!</h1>
+          <h1 class="bg_text">FARM</h1>
+        </div>
+        <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+        <button class="primary_button">LEARN MORE</button>
+      </div>
+    </section>
+
     <section class="products">
       <div class="container m-auto py-5 row justify-content-center align-items-center">
         <div class="products_left col-12 col-lg-6 d-flex flex-column align-items-start">
@@ -67,7 +109,7 @@
         </div>
         <div class="products_right mt-4 mt-lg-0 row col-12 col-lg-6">
           <div class="products_item col-12 col-sm-6">
-            <div class="content">
+            <div class="content h-100 d-flex flex-column justify-content-center">
               <div class="icon mx-auto mb-3">
                 <img src="imgs/img4.png" alt="" />
               </div>
@@ -75,7 +117,7 @@
             </div>
           </div>
           <div class="products_item col-12 col-sm-6">
-            <div class="content">
+            <div class="content h-100 d-flex flex-column justify-content-center">
               <div class="icon mx-auto mb-3">
                 <img src="imgs/img2.png" alt="" />
               </div>
@@ -83,7 +125,7 @@
             </div>
           </div>
           <div class="products_item col-12 col-sm-6">
-            <div class="content">
+            <div class="content h-100 d-flex flex-column justify-content-center">
               <div class="icon mx-auto mb-3">
                 <img src="imgs/img1.png" alt="" />
               </div>
@@ -91,7 +133,7 @@
             </div>
           </div>
           <div class="products_item col-12 col-sm-6">
-            <div class="content">
+            <div class="content h-100 d-flex flex-column justify-content-center">
               <div class="icon mx-auto mb-3">
                 <img src="imgs/img3.png" alt="" />
               </div>
@@ -101,6 +143,7 @@
         </div>
       </div>
     </section>
+
     <section class="services">
       <div class="container m-auto py-5">
         <div class="services_title row justify-content-center align-items-center">
@@ -148,6 +191,7 @@
         </div>
       </div>
     </section>
+
     <section class="quality">
       <div class="container mx-auto py-5 row align-items-lg-center">
         <div class="quality_text col-12 col-lg-6">
