@@ -225,6 +225,10 @@ header nav .brand * {
   color: #fb811e;
 }
 
+header nav.scrolled .brand * {
+  color: #060606;
+}
+
 header nav .brand a {
   position: relative;
 }
@@ -234,6 +238,7 @@ header nav .brand i {
   position: absolute;
   top: -5px;
   left: 55px;
+  transition: none;
 }
 
 header nav .brand:hover * {
@@ -247,6 +252,7 @@ header nav .menu {
 
 header nav .menu i {
   font-size: 20px;
+  transition: none;
 }
 
 header nav .menu .fa-magnifying-glass {
