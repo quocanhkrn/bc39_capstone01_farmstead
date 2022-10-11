@@ -136,6 +136,10 @@ table {
   box-sizing: inherit;
   transition: all 0.5s
 }
+p{
+  margin:0;
+  padding:0;
+}
 
 /* MAIN CSS */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
@@ -195,7 +199,42 @@ button.primary_button:hover {
 /* QUALITY */
 
 /* FEATURES */
-
+.feature-col a{
+  text-decoration: none;
+  color: #060606;
+  transition: all .5s;
+}
+.feature-unit{
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 2rem 1rem;
+  background: var(bg light);
+  transition: 0.3 ease-in;
+}
+.feature-unit:hover{
+  border: 1px solid #eee;
+  transition: ease-in .3s;
+  /* box-shadow: -1px 2px 12px -9px; */
+  background: #fff;
+}
+.feature-col{
+  margin-top: 30px;
+}
+.feature-text h4{
+  font-size: 22px;
+  line-height: 25px;
+  font-weight: 600;
+}
+.feature-text h4:hover{
+  transition: 0.3s ease-in-out;
+  color: #009f4d;
+}
+.feature-text p{
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 300;
+}
 /* GALLERY */
 
 /* FEEDBACK */
