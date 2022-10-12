@@ -20,113 +20,214 @@
     <title>FARMSTEAD</title>
   </head>
   <body>
-    <header></header>
-    <section class="banner"></section>
-    <section class="products"></section>
-    <section class="services"></section>
-    <section class="quality"></section>
-    <section class="features">
-      <div class="container homepage_service">
-        <div class="row justify-content-center">
-          <!-- 1 -->
-          <div class="col-12 col-lg-4 col-md-6 feature-col" >
-            <a href="#url" class="d-flex feature-unit" id ="feature-col" onclick="onclick()">
-              <div class="col-3">
-                <div class="feature-info">
-                  <img src="./imgs/img5.png" alt="nhà" class="img-fluid">
-                </div>
+    <header id="header">
+      <nav id="navbar" class="container d-flex justify-content-between align-items-center">
+        <div class="brand">
+          <a href="#">
+            Farmstead
+            <i class="fa-solid fa-leaf"></i>
+          </a>
+        </div>
+        <div class="menu d-flex align-items-center">
+          <button class="search">
+            <i class="fa-solid fa-magnifying-glass rounded-circle d-flex justify-content-center align-items-center"></i>
+            <input class="rounded-pill" type="text" onblur="this.value=''" value="" />
+          </button>
+          <button class="theme_changer">
+            <i class="fa-regular fa-moon"></i>
+          </button>
+          <button class="hamburger_menu">
+            <i class="fa-solid fa-bars" onclick="toggleHamburgerMenu()"></i>
+            <ul class="hamburger_menu_toggle overflow-hidden d-flex flex-column align-items-center" id="hamburger_menu_toggle">
+              <li><a class="active" href="#">HOME</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">SERVICES</a></li>
+              <li><a href="#">BLOG POSTS</a></li>
+              <li><a href="#">LANDING PAGE</a></li>
+              <li><a href="#">ELEMENTS PAGE</a></li>
+              <li><a href="#">404 PAGE</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="banner row p-0 m-0">
+      <div class="banner_slideshow col-12 col-md-7 ml-auto p-0 overflow-hidden h-100">
+        <div id="carousel" class="carousel slide h-100">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner h-100">
+            <div class="carousel-item h-100 active">
+              <img src="imgs/b1.jpg" class="d-block w-100 h-100" alt="" />
+              <div class="carousel-caption text-right d-none d-md-block">
+                <h1>01/03</h1>
+                <p>Agriculture</p>
               </div>
-              <div class="col-9">
-                <div class="feature-text">
-                  <h4>Agriculture</h4>
-                  <p>Ras effic itur metusga via suscipit consectetur adipisicing unde omnis.</p>
-                </div>
+            </div>
+            <div class="carousel-item h-100">
+              <img src="imgs/b8.jpg" class="d-block w-100 h-100" alt="" />
+              <div class="carousel-caption text-right d-none d-md-block">
+                <h1>02/03</h1>
+                <p>Farm Field</p>
               </div>
-            </a>
+            </div>
+            <div class="carousel-item h-100">
+              <img src="imgs/b4.jpg" class="d-block w-100 h-100" alt="" />
+              <div class="carousel-caption text-right d-none d-md-block">
+                <h1>03/03</h1>
+                <p>Organic Farm</p>
+              </div>
+            </div>
           </div>
-          <!-- 2 -->
-          <div class="col-12 col-lg-4 col-md-6 feature-col">
-            <a href="#url" class="d-flex feature-unit">
-              <div class="col-3">
-                <div class="feature-info">
-                  <img src="./imgs/img6.png" alt="nhà" class="img-fluid">
-                </div>
+        </div>
+      </div>
+      <div class="banner_text p-5 mx-3">
+        <div class="title">
+          <h1 class="title">Welcome to Farmstead where Natural Food is born!</h1>
+          <h1 class="bg_text">FARM</h1>
+        </div>
+        <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+        <button class="primary_button">LEARN MORE</button>
+      </div>
+    </section>
+
+    <section class="products">
+      <div class="container m-auto py-5 row justify-content-center align-items-center">
+        <div class="products_left col-12 col-lg-6 d-flex flex-column align-items-start">
+          <h2 class="subtitle">Grow Naturally</h2>
+          <h1 class="title">Leaders in the field</h1>
+          <p class="description">
+            Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi ac sed, lacinia est. Quisque ut lectus consequat, venenatis eros et,
+            sed commodo risus. Nullam sit amet laoreet elit. Suspendisse non init magnaa velit efficitur, dolor eget ex fermentum.
+          </p>
+          <button class="primary_button">DISCOVER MORE</button>
+        </div>
+        <div class="products_right mt-4 mt-lg-0 row col-12 col-lg-6">
+          <div class="products_item col-12 col-sm-6">
+            <div class="content h-100 d-flex flex-column justify-content-center">
+              <div class="icon mx-auto mb-3">
+                <img src="imgs/img4.png" alt="" />
               </div>
-              <div class="col-9">
-                <div class="feature-text">
-                  <h4>Fresh</h4>
-                  <p>Ras effic itur metusga via suscipit consectetur adipisicing unde omnis.</p>
-                </div>
-              </div>
-            </a>
+              <a href="#">Natural Products</a>
+            </div>
           </div>
-          <!-- 3 -->
-          <div class="col-12 col-lg-4 col-md-6 feature-col">
-            <a href="#url" class="d-flex feature-unit">
-              <div class="col-3">
-                <div class="feature-info">
-                  <img src="./imgs/img7.png" alt="nhà" class="img-fluid">
-                </div>
+          <div class="products_item col-12 col-sm-6">
+            <div class="content h-100 d-flex flex-column justify-content-center">
+              <div class="icon mx-auto mb-3">
+                <img src="imgs/img2.png" alt="" />
               </div>
-              <div class="col-9">
-                <div class="feature-text">
-                  <h4>Natural</h4>
-                  <p>Ras effic itur metusga via suscipit consectetur adipisicing unde omnis.</p>
-                </div>
-              </div>
-            </a>
+              <a href="#">Wheat Cultivation</a>
+            </div>
           </div>
-          <!-- 4 -->
-          <div class="col-12 col-lg-4 col-md-6 feature-col">
-            <a href="#url" class="d-flex feature-unit">
-              <div class="col-3">
-                <div class="feature-info">
-                  <img src="./imgs/img8.png" alt="nhà" class="img-fluid">
-                </div>
+          <div class="products_item col-12 col-sm-6">
+            <div class="content h-100 d-flex flex-column justify-content-center">
+              <div class="icon mx-auto mb-3">
+                <img src="imgs/img1.png" alt="" />
               </div>
-              <div class="col-9">
-                <div class="feature-text">
-                  <h4>Farm</h4>
-                  <p>Ras effic itur metusga via suscipit consectetur adipisicing unde omnis.</p>
-                </div>
-              </div>
-            </a>
+              <a href="#">Modern Truck</a>
+            </div>
           </div>
-          <!-- 5-->
-          <div class="col-12 col-lg-4 col-md-6 feature-col">
-            <a href="#url" class="d-flex feature-unit">
-              <div class="col-3">
-                <div class="feature-info">
-                  <img src="./imgs/img9.png" alt="nhà" class="img-fluid">
-                </div>
+          <div class="products_item col-12 col-sm-6">
+            <div class="content h-100 d-flex flex-column justify-content-center">
+              <div class="icon mx-auto mb-3">
+                <img src="imgs/img3.png" alt="" />
               </div>
-              <div class="col-9">
-                <div class="feature-text">
-                  <h4>Organic</h4>
-                  <p>Ras effic itur metusga via suscipit consectetur adipisicing unde omnis.</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <!-- 6 -->
-          <div class="col-12 col-lg-4 col-md-6 feature-col">
-            <a href="#url" class="d-flex feature-unit">
-              <div class="col-3">
-                <div class="feature-info">
-                  <img src="./imgs/img10.png" alt="nhà" class="img-fluid">
-                </div>
-              </div>
-              <div class="col-9">
-                <div class="feature-text">
-                  <h4>Dairy</h4>
-                  <p>Ras effic itur metusga via suscipit consectetur adipisicing unde omnis.</p>
-                </div>
-              </div>
-            </a>
+              <a href="#">Organic Products</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <section class="services">
+      <div class="container m-auto py-5">
+        <div class="services_title row justify-content-center align-items-center">
+          <div class="main col-12 col-md-6">
+            <h2 class="subtitle">What we do</h2>
+            <h1 class="title mb-3 mb-md-0">Why Choose Our Fresh Organic Foods</h1>
+          </div>
+          <p class="description col-12 col-md-6">
+            Sed ut perspiciatis unde omnis iste natus error sit accusantium doloremque, eaque ipsa quae ab illo inventore.Sed ut perspiciatis unde
+            omnis iste natus error sit.
+          </p>
+          <div class="services_title_bg">Services</div>
+        </div>
+        <div class="services_list row m-auto pt-md-4">
+          <div class="services_item col-12 col-md-6 col-lg-4 mx-auto pt-4 pt-md-0">
+            <div class="card border-0 overflow-hidden">
+              <img src="imgs/service1.jpg" class="card-img-top" alt="" />
+              <div class="card-body my-3">
+                <h1 class="px-3 py-2 rounded-pill">Natural</h1>
+                <a href="#">Agriculture Products</a>
+                <p>Sed ut perspiciatis unde omnis iste natus sit accusantium doloremque laudantium, totam rem aperiam</p>
+              </div>
+            </div>
+          </div>
+          <div class="services_item col-12 col-md-6 col-lg-4 mx-auto pt-4 pt-md-0">
+            <div class="card border-0 overflow-hidden">
+              <img src="imgs/service2.jpg" class="card-img-top" alt="" />
+              <div class="card-body my-3">
+                <h1 class="px-3 py-2 rounded-pill">Agriculture</h1>
+                <a href="#">Fresh Vegetables</a>
+                <p>Sed ut perspiciatis unde omnis iste natus sit accusantium doloremque laudantium, totam rem aperiam</p>
+              </div>
+            </div>
+          </div>
+          <div class="services_item col-12 col-md-6 col-lg-4 mx-auto pt-4 pt-md-0 mt-md-4 mt-lg-0">
+            <div class="card border-0 overflow-hidden">
+              <img src="imgs/service3.jpg" class="card-img-top" alt="" />
+              <div class="card-body my-3">
+                <h1 class="px-3 py-2 rounded-pill">Farm</h1>
+                <a href="#">Organic Products</a>
+                <p>Sed ut perspiciatis unde omnis iste natus sit accusantium doloremque laudantium, totam rem aperiam</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quality">
+      <div class="container mx-auto py-5 row align-items-lg-center">
+        <div class="quality_text col-12 col-lg-6">
+          <h2 class="subtitle">Why choose us</h2>
+          <h1 class="title">Quality food is the most important thing in our life</h1>
+          <p class="description">
+            Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Non quae, fugiat.
+          </p>
+          <div class="showcase row">
+            <div class="showcase_item mb-3 mb-md-0 col-12 col-md-6 d-flex">
+              <i class="fa-solid fa-users mr-2"></i>
+              <div class="text">
+                <h1>Qualified Staff</h1>
+                <p class="mt-2">Sed ut perspiciatis unde omnis iste natus error sit.</p>
+              </div>
+            </div>
+            <div class="showcase_item col-12 col-md-6 d-flex">
+              <i class="fa-solid fa-life-ring mr-2"></i>
+              <div class="text">
+                <h1>Qualified Staff</h1>
+                <p class="mt-2">Sed ut perspiciatis unde omnis iste natus error sit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="quality_img mt-4 mt-lg-0 col-12 col-lg-5 ml-auto">
+          <img class="img-fluid ml-auto" src="imgs/image.jpg" alt="" />
+          <div class="caption px-5 py-4 d-inline-block text-white text-center">
+            <h1>36+</h1>
+            <p>YEARS OF EXPERIENCE</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="features"></section>
     <section class="gallery"></section>
     <section class="feedback"></section>
     <footer></footer>
@@ -139,7 +240,29 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
       crossorigin="anonymous"></script>
-      <!-- JS -->
-      <script src="./js/main.js"></script>
+
+    <script>
+      function toggleHamburgerMenu() {
+        var x = document.getElementById("hamburger_menu_toggle");
+        if (x.style.height === "384px") {
+          x.style.height = 0;
+        } else {
+          x.style.height = "384px";
+        }
+      }
+
+      $(function () {
+        $(document).scroll(function () {
+          var $nav = $("#navbar");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+        $(document).scroll(function () {
+          var $header = $("#header");
+          $header.toggleClass("scrolled", $(this).scrollTop() > $header.height());
+        });
+      });
+    </script>
+    <!-- JS -->
+    <script src="./js/main.js"></script>
   </body>
 </html>
