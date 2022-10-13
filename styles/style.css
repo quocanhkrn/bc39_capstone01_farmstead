@@ -182,12 +182,17 @@ button.primary_button {
   color: white;
   background-color: #fb811e;
   border-radius: 50px;
+  outline: 3px solid rgba(0, 159, 77, 0);
   padding: 15px 30px;
   cursor: pointer;
 }
 
 button.primary_button:hover {
   background-color: #009f4d;
+}
+
+button.primary_button:focus {
+  outline: 3px solid rgba(0, 159, 77, 0.5);
 }
 
 .carousel-indicators li {
