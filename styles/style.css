@@ -94,9 +94,7 @@ textarea {
   vertical-align: baseline;
   scroll-behavior: smooth;
 }
-body{
-  font-family: 'Source Sans Pro', sans-serif!important;
-}
+
 article,
 aside,
 details,
@@ -790,10 +788,10 @@ blockquote {
 }
 
 @media (max-width: 768px) {
-  .w3l-clients-1{
+  .w3l-clients-1 {
     height: 100vh;
   }
-  
+
   .w3l-clients-1 blockquote q {
     font-size: 17px;
     line-height: 30px;
@@ -833,7 +831,7 @@ blockquote {
 
 /* FOOTER */
 
-.single_footer h3{
+.single_footer h3 {
   font-size: 20px;
   line-height: 25px;
   margin-bottom: 30px;
@@ -841,19 +839,20 @@ blockquote {
   color: #060606;
 }
 
-.single_footer p{
+.single_footer p {
   line-height: 24px;
 }
 
-.single_footer a{
+.single_footer a {
   background-color: transparent;
   color: #707070;
 }
-.single_footer a.logo:hover{
+
+.single_footer a.logo:hover {
   color: hsl(0, 0%, 4%);
 }
 
-.single_footer .logo{
+.single_footer .logo {
   font-size: 32px;
   color: #fb811e;
   padding: 0px;
@@ -861,7 +860,7 @@ blockquote {
   transition: all 0.5s;
 }
 
-.single_footer a.logo i{
+.single_footer a.logo i {
   position: absolute;
   top: -9px;
   left: 50px;
@@ -875,6 +874,7 @@ blockquote {
   margin-top: 15px;
   width: 100%;
 }
+
 .subscribe__input {
   background: #f4f4f4;
   border: none;
@@ -887,11 +887,13 @@ blockquote {
   border: 1px soilid #eee;
   font-size: 16px;
 }
-.copyrights a{
+
+.copyrights a {
   color: #009f4d;
   transition: all .5s;
 }
-.copyrights a:hover{
+
+.copyrights a:hover {
   color: #fb811e;
 }
 
@@ -906,16 +908,18 @@ blockquote {
   font-size: 16px;
   width: 20%;
   padding: 12px 12px;
-  }
-.subscribe__btn:hover {
-   opacity: .8;
 }
 
-.social_profile li{
+.subscribe__btn:hover {
+  opacity: .8;
+}
+
+.social_profile li {
   display: inline-block;
   margin-right: 5px;
 }
-.social_profile li a{
+
+.social_profile li a {
   color: #009f4d;
   width: 35px;
   height: 35px;
@@ -925,24 +929,34 @@ blockquote {
   text-align: center;
   transition: all .5s;
 }
-.social_profile li a i{
-  font-size:15px;
+
+.social_profile li a i {
+  font-size: 15px;
   line-height: 35px;
 }
-.social_profile li a:hover{
+
+.social_profile li a:hover {
   color: #fb811e;
   background: rgb(255 201 69 / 19%);
   box-shadow: 0px 4px 7px 0px rgb(10 10 10 / 24%);
 }
-@media only screen and (max-width:768px) { 
-  .subscribe__input{padding: 0 50px 0 20px;}
+
+@media only screen and (max-width:768px) {
+  .subscribe__input {
+    padding: 0 50px 0 20px;
+  }
 }
 
-.subscribe__btn i{
-  transition: all 0.3s ease 0s;}
-@media only screen and (max-width:768px) { 
-  	.subscribe__btn{right:0px;}
+.subscribe__btn i {
+  transition: all 0.3s ease 0s;
 }
+
+@media only screen and (max-width:768px) {
+  .subscribe__btn {
+    right: 0px;
+  }
+}
+
 button {
   padding: 0;
   border: none;
@@ -950,9 +964,10 @@ button {
   -webkit-border-radius: 0;
   border-radius: 0;
 }
+
 /*END NEWSLETTER CSS*/
 
-#movetop{
+#movetop {
   position: fixed;
   bottom: 30px;
   right: 15px;
@@ -968,6 +983,7 @@ button {
   border-radius: 4px;
   padding: 0;
   transition: all .5s;
+}
 
 /* FOOTER */
 
