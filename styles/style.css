@@ -727,6 +727,8 @@ h5.gall-text {
 /* FEEDBACK */
 .w3l-clients-1 {
   background-image: url(../imgs/bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover
 }
 
 .w3l-clients-1 {
