@@ -774,6 +774,10 @@ h5.gall-text {
   display: inline-block;
 }
 
+.text-right {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 blockquote {
   margin: 0 0 1rem;
 }
@@ -841,6 +845,7 @@ blockquote {
 
 .single_footer p {
   line-height: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .single_footer a {
@@ -865,6 +870,10 @@ blockquote {
   top: -9px;
   left: 50px;
   font-size: 20px;
+}
+
+.single_footer input::placeholder {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 /*START NEWSLETTER CSS*/
