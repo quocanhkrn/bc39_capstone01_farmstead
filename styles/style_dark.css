@@ -151,6 +151,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-family: 'Volkhov', serif;
   position: relative;
+  background-color: #222222;
 }
 
 a:hover {
@@ -166,7 +167,7 @@ h2.subtitle {
 h1.title {
   font-size: 40px;
   font-weight: 700;
-  color: #060606;
+  color: white;
   margin-bottom: 20px;
 }
 
@@ -218,7 +219,7 @@ header {
 }
 
 header.scrolled {
-  background-color: white;
+  background-color: #222222;
   box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
 }
 
@@ -237,7 +238,7 @@ header nav * {
 }
 
 header nav.scrolled * {
-  color: #060606;
+  color: white;
 }
 
 header nav .brand {
@@ -250,7 +251,7 @@ header nav .brand * {
 }
 
 header nav.scrolled .brand * {
-  color: #060606;
+  color: white;
 }
 
 header nav .brand a {
@@ -267,7 +268,7 @@ header nav .brand i {
 
 header nav .brand:hover * {
   text-decoration: none;
-  color: #060606;
+  color: white;
 }
 
 header nav .menu {
@@ -280,7 +281,7 @@ header nav .menu i {
 }
 
 header nav .menu .fa-magnifying-glass {
-  color: #060606;
+  color: #222222;
   background-color: white;
   width: 35px;
   height: 35px;
@@ -333,12 +334,12 @@ header nav .menu .hamburger_menu_toggle li {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
   font-weight: 600;
-  color: #060606;
+  color: white;
   padding: 15px 0;
 }
 
 header nav .menu .hamburger_menu_toggle li a {
-  color: #060606;
+  color: white;
 }
 
 header nav .menu .hamburger_menu_toggle :is(a.active, a:hover) {
@@ -352,7 +353,7 @@ header nav .menu .hamburger_menu_toggle :is(a.active, a:hover) {
   }
 
   header nav .brand:hover * {
-    color: #060606;
+    color: white;
   }
 }
 
@@ -403,6 +404,7 @@ header nav .menu .hamburger_menu_toggle :is(a.active, a:hover) {
 .banner_text .bg_text {
   font-size: 70px;
   font-weight: 700;
+  color: white;
   position: absolute;
   top: -30px;
   left: -30px;
@@ -448,14 +450,14 @@ header nav .menu .hamburger_menu_toggle :is(a.active, a:hover) {
 
 .products_item .content {
   text-align: center;
-  background-color: white;
-  box-shadow: 0 25px 98px 0 rgb(0 0 0 / 5%);
+  background-color: #222222;
+  box-shadow: 0 25px 98px 0 rgb(0 0 0 / 50%);
   border-radius: 20px;
   padding: 20px 30px;
 }
 
 .products_item:hover .content {
-  box-shadow: 0 25px 98px 0 rgb(0 0 0 / 10%);
+  box-shadow: 0 25px 98px 0 rgb(0 0 0 / 100%);
 }
 
 .products_item .content .icon {
@@ -472,7 +474,7 @@ header nav .menu .hamburger_menu_toggle :is(a.active, a:hover) {
 .products_item .content a {
   font-size: 20px;
   font-weight: 700;
-  color: #060606;
+  color: white;
 }
 
 .products_item .content a:hover {
@@ -515,6 +517,7 @@ header nav .menu .hamburger_menu_toggle :is(a.active, a:hover) {
 .services_item .card {
   font-family: 'Source Sans Pro', sans-serif;
   border-radius: 20px;
+  background-color: #222222;
 }
 
 .services_item h1 {
@@ -529,7 +532,7 @@ header nav .menu .hamburger_menu_toggle :is(a.active, a:hover) {
   font-size: 24px;
   font-weight: 600;
   line-height: 2;
-  color: #060606;
+  color: white;
 }
 
 .services_item a:hover {
@@ -551,7 +554,7 @@ header nav .menu .hamburger_menu_toggle :is(a.active, a:hover) {
 .quality_text .showcase_item h1 {
   font-size: 20px;
   font-weight: 700;
-  color: #060606;
+  color: white;
 }
 
 .quality_text .showcase_item p {
@@ -593,7 +596,7 @@ header nav .menu .hamburger_menu_toggle :is(a.active, a:hover) {
 /* FEATURES */
 .feature-col a {
   text-decoration: none;
-  color: #060606;
+  color: white;
   transition: all .5s;
 }
 
@@ -608,8 +611,6 @@ header nav .menu .hamburger_menu_toggle :is(a.active, a:hover) {
 .feature-unit:hover {
   border: 1px solid #eee;
   transition: ease-in .3s;
-  /* box-shadow: -1px 2px 12px -9px; */
-  background: #fff;
 }
 
 .feature-col {
@@ -630,6 +631,7 @@ header nav .menu .hamburger_menu_toggle :is(a.active, a:hover) {
 .feature-text p {
   margin-top: 10px;
   font-size: 15px;
+  font-family: 'Source Sans Pro', sans-serif;
   line-height: 20px;
   font-weight: 300;
 }
@@ -664,7 +666,11 @@ header nav .menu .hamburger_menu_toggle :is(a.active, a:hover) {
   font-size: 40px;
   line-height: 50px;
   font-weight: 600;
-  color: #060606;
+  color: white;
+}
+
+.gallery_content p {
+  color: white;
 }
 
 .gallery_content .btn-style {
@@ -705,7 +711,6 @@ header nav .menu .hamburger_menu_toggle :is(a.active, a:hover) {
 
 .hover14 figure:hover::before {
   left: 125%;
-
 }
 
 .gallery_content img {
@@ -844,10 +849,11 @@ blockquote {
   line-height: 25px;
   margin-bottom: 30px;
   font-weight: 600;
-  color: #060606;
+  color: white;
 }
 
 .single_footer p {
+  color: #707070;
   line-height: 24px;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -889,7 +895,7 @@ blockquote {
 }
 
 .subscribe__input {
-  background: #f4f4f4;
+  background: #070707;
   border: none;
   border-radius: 30px 0px 0px 30px;
   color: #707070;
