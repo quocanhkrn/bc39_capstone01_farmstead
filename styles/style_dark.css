@@ -885,7 +885,6 @@ blockquote {
 .single_footer input::placeholder {
   font-family: 'Source Sans Pro', sans-serif;
 }
-
 /*START NEWSLETTER CSS*/
 .subscribe {
   display: block;
