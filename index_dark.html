@@ -30,7 +30,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
     <!-- Smartphoto -->
-    <link rel="stylesheet" href="https://unpkg.com/smartphoto@1.1.0/css/smartphoto.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/smartphoto@1.1.0/css/smartphoto.min.css" />
     <!-- My Css -->
     <link rel="stylesheet" href="styles/style_dark.css" />
     <title>FARMSTEAD</title>
@@ -50,7 +50,7 @@
             <input class="rounded-pill" type="text" onblur="this.value=''" value="" />
           </button>
           <button class="theme_changer">
-            <i class="fa-regular fa-moon"></i>
+            <a href="index.html"><i class="fa-solid fa-sun"></i></a>
           </button>
           <button class="hamburger_menu">
             <i class="fa-solid fa-bars" onclick="toggleHamburgerMenu()"></i>
@@ -624,9 +624,9 @@
     <!-- gallery popup js -->
     <script src="https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/js/smartphoto.js"></script>
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
+      document.addEventListener("DOMContentLoaded", function () {
         const sm = new SmartPhoto(".js-img-viwer", {
-          showAnimation: false
+          showAnimation: false,
         });
         // sm.destroy();
       });
