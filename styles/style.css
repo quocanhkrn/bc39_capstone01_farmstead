@@ -865,7 +865,7 @@ blockquote {
   color: #fb811e;
   padding: 0px;
   position: relative;
-  transition: all 0.5s;
+  transition: none;
 }
 
 .single_footer a.logo i {
@@ -873,8 +873,29 @@ blockquote {
   top: -9px;
   left: 50px;
   font-size: 20px;
+  transition: none;
+}
+.footer_logo .brand{
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  line-height: 25px;
 }
 
+.footer_logo .brand a{
+  position: relative;
+  color: #fb811e;
+}
+.footer_logo .brand:hover *{
+  color: hsl(0, 0%, 4%);
+}
+.footer_logo .brand a i{
+  font-size: 20px;
+  position: absolute;
+  top: -5px;
+  left: 55px;
+  transition: none;
+}
 .single_footer input::placeholder {
   font-family: 'Source Sans Pro', sans-serif;
 }
