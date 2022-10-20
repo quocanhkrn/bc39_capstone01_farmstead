@@ -849,6 +849,7 @@ blockquote {
 .single_footer p {
   line-height: 24px;
   font-family: 'Source Sans Pro', sans-serif;
+  color: #707070;
 }
 
 .single_footer a {
@@ -875,27 +876,31 @@ blockquote {
   font-size: 20px;
   transition: none;
 }
-.footer_logo .brand{
+
+.footer_logo .brand {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 30px;
   line-height: 25px;
 }
 
-.footer_logo .brand a{
+.footer_logo .brand a {
   position: relative;
   color: #fb811e;
 }
-.footer_logo .brand:hover *{
+
+.footer_logo .brand:hover * {
   color: hsl(0, 0%, 4%);
 }
-.footer_logo .brand a i{
+
+.footer_logo .brand a i {
   font-size: 20px;
   position: absolute;
   top: -5px;
   left: 55px;
   transition: none;
 }
+
 .single_footer input::placeholder {
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -1000,7 +1005,7 @@ button {
 
 /*END NEWSLETTER CSS*/
 
-#movetop{
+#movetop {
   position: fixed;
   bottom: 30px;
   right: 15px;
